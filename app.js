@@ -7,10 +7,10 @@ const Post = require("./models/Post");
 const pageControllers = require("./controllers/pageControllers");
 const postControllers = require("./controllers/postControllers");
 const app = express();
-
+require("dotenv").config();
 //Connect
-const CONNECTION_URL =
-  "mongodb+srv://cleanblog:cleanblog@cluster0.j4pud.mongodb.net/cleanblog-db?retryWrites=true&w=majority";
+const URL = process.env.URL;
+const CONNECTION_URL = URL;
 mongoose.connect(
   CONNECTION_URL,
   {
