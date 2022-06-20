@@ -1,1 +1,1 @@
-## Clean Blog Proje 1.Bölüm
+## Patika CleanBlog Nodejs Projesi
