@@ -44,8 +44,8 @@ app.get("/add", pageControllers.getAddPage);
 
 app.get("/posts/edit/:id", pageControllers.getEditPage);
 
-const port = 3000;
+const PORT = process.env.PORT || 5000;
 
-app.listen(port, () => {
-  console.log(`Sunucu ${port} portunda başlatıldı`);
+app.listen(PORT, () => {
+  console.log(`Sunucu ${PORT} portunda başlatıldı`);
 });
