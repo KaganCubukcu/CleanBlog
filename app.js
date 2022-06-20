@@ -13,11 +13,11 @@ const CONNECTION_URL =
   "mongodb+srv://cleanblog:cleanblog@cluster0.j4pud.mongodb.net/cleanblog-db?retryWrites=true&w=majority";
 mongoose.connect(
   CONNECTION_URL,
-  // {
-  //   useNewUrlParser: true,
+  {
+    useNewUrlParser: true,
 
-  //   useUnifiedTopology: true,
-  // },
+    useUnifiedTopology: true,
+  },
   (err) => {
     if (err) throw err;
     console.log("Connected to MongoDB!!!");

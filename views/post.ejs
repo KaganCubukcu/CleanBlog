@@ -15,7 +15,6 @@
             <span class="meta">Posted by
               <a href="#"><%= post.author %></a>
               <%= post.dateCreated %></span>
-              <a href="/posts/edit/<%=post._id %>">Update</a>
           </div>
         </div>
       </div>
@@ -31,8 +30,8 @@
         </div>
       </div>
       <div class="col-lg-8 col-md-10 mx-auto">
-        <a href="/posts/edit/<%= post._id %>"><button class="btn btn-primary" >Update Details</button></a>
-        <a href="/posts/<%= post._id %>?_method=DELETE" onclick="confirm('Are you sure?')"><button class="btn btn-danger" >Delete Post</button></a>
+        <a href="/posts/edit/<%= post._id %>"><button class="btn btn-primary" >Update</button></a>
+        <a href="/posts/<%= post._id %>?_method=DELETE" onclick="confirm('Are you sure?')"><button class="btn btn-danger" >Delete</button></a>
       </div>
     </div>
   </article>
